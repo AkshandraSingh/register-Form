@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        /* It incloudes backround */
+        html {
+            background-image: url('https://images.saymedia-content.com/.image/t_share/MTkzODAzNTgyODUxMDY1MzI4/cool-css-backgrounds.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* It is Universal tag it apply to all */
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+        }
+
+        /* Search Bar CSS */
+        #search {
+            color: black;
+            font-family: 'Belanosima', sans-serif;
+            width: 180px;
+            height: 24px;
+            background-color: #E6F1F8;
+            border-color: transparent;
+            border-radius: 22px;
+            margin: 4px;
+        }
+
+        /* a tag CSS */
+        a {
+            text-decoration: none;
+            color:rgb(224, 26, 69);
+
+        }
+
+        /* List item Css */
+        li {
+            margin-top: 22px;
+            margin-right: 22px;
+            margin-bottom: 22px;
+            display: inline-block;
+            font-weight: bold;
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* When some one hover on a tag */
+        a:hover {
+            color: rgb(248, 137, 46);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Login Form (Main Body) */
+        .form {
+            width: 384px;
+            height: 302px;
+            border: 2px solid white;
+            border-radius: 22px;
+            margin: auto;
+            padding: 27px;
+        }
+
+        /* Form h2 Css */
+        .form h2 {
+            color:rgb(224, 26, 69);
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        /* Form Paragraph CSS */
+        .form p {
+            font-family: 'Belanosima', sans-serif;
+            margin-top: 22px;
+            margin-bottom: 16px;
+        }
+
+        /* Input CSS */
+        .form input {
+            color: black;
+            font-family: 'Belanosima', sans-serif;
+            width: 336px;
+            height: 26px;
+            background-color: #E6F1F8;
+            border-color: transparent;
+            border-radius: 22px;
+            margin: 4px;
+        }
+
+        /* CSS on  Submit Button */
+        .form button {
+            font-family: 'Roboto Slab', serif;
+            margin: 20px;
+            margin-top: 34px;
+            background-color:rgb(224, 26, 69);
+            width: 131px;
+            height: 34px;
+            border-radius: 22px;
+            font-weight: bold;
+        }
+
+        .form button:hover {
+            background-color: rgb(41, 38, 235);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Blogs">Blogs</a></li>
+                <li><a href="/Contact">Contact us</a></li>
+                <li><input type="text" placeholder="Search" id="search"></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="form">
+            <h2>Create Account</h2>
+            <form action="/submit" method="post">
+                <p>Username</p>
+                <input type="text" name="userName" placeholder="Username" required>
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Email" required>
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
